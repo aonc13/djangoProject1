@@ -141,19 +141,22 @@ function TypeThree() {
 
 
 
-
-    <div class="threecircel">
+  {% for d in img_mno %}
+  <div class="threecircel">
             <div class="glass-div1">
                 <div class="roundcont1">
-                  <img src="{% static 'blog/img/bg.jpg' %}" alt="تصویر" class="blur-image1">
+                  <img src="{% static d.image %}" alt="تصویر" class="blur-image1">
                   <div class="text-container1">
-                    <a href="#" class="title1">عنوان دیو</a>
-                    <p class="description1">اینجا متن دیو قرار می‌گیرد.</p>
+                    <a href="{{d.link_web}}" class="title1">{{d.title}}</a>
+                    <p class="description1">{{d.text_inf}}</p>
                   </div>
                 </div>
             </div>
 
     </div>
+  {% endfor %}
+
+
 
 
 

@@ -15,4 +15,7 @@ class menuItem(models.Model):
 
 
 class Photo(models.Model):
-    image = models.ImageField(upload_to='photos/')
+    image = models.ImageField(upload_to='BlogPegasus/static/blog/img')
+    title = models.CharField(max_length=100)
+    text_inf = models.CharField(max_length=300)
+    link_web = models.CharField(max_length=150)
