@@ -12,3 +12,7 @@ class menuItem(models.Model):
      name = models.CharField(max_length=100)
      mtn_kol = models.CharField(max_length=400)
      lnk_a = models.CharField(max_length=150)
+
+
+class Photo(models.Model):
+    image = models.ImageField(upload_to='photos/')
