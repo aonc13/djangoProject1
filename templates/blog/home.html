@@ -12,7 +12,7 @@
   <script src="{% static 'js/jquery.min' %}"></script>
   <script>
     function scrollToTarget() {
-      const target = document.getElementById('slideshow');
+      const target = document.getElementById('p_tank');
       const me = document.getElementById('home-line');
       me.style.display = "none";
       target.scrollIntoView({ behavior: 'smooth' });
@@ -100,24 +100,24 @@ function TypeThree() {
 
 
         <div id="slideshow" class="slideshow-container">
-            <p style="color:white;">heloo</p>
+{#            <p style="color:white;">heloo</p>#}
 
             <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="{% static 'blog/img/bg.jpg' %}" style="width:100%">
-                <div class="text">Caption Text</div>
+{#                <div class="numbertext">1 / 3</div>#}
+                <img src="{% static 'blog/img/bg.jpg' %}" style="width: fit-content;height: 50%">
+{#                <div class="text">Caption Text</div>#}
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="{% static 'blog/img/ss.jpg' %}" style="width:100%; ">
-                <div class="text">Caption Two</div>
+{#                <div class="numbertext">2 / 3</div>#}
+                <img src="{% static 'blog/img/ss.jpg' %}" style="width: fit-content;height: 50%">
+{#                <div class="text">Caption Two</div>#}
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="{% static 'blog/img/bg.jpg' %}" style="width:100%">
-                <div class="text">Caption Three</div>
+{#                <div class="numbertext">3 / 3</div>#}
+                <img src="{% static 'blog/img/bg.jpg' %}" style="width: fit-content;height: 50%">
+{#                <div class="text">Caption Three</div>#}
             </div>
         </div>
 
@@ -157,7 +157,7 @@ function TypeThree() {
     </div>
 
     <div>
-        <p class="p_tank" style="top: 320vh;color: #5bc0de;position: relative">hi </p>
+        <p id="p_tank" style="top: 320vh;color: #5bc0de;position: relative">hi </p>
     </div>
 
 

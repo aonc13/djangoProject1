@@ -2,7 +2,7 @@
   font-family: 'vazirC';
   src: url('font/Vazir-Code-Hack.ttf');
 }
-
+{%load static %}
 /**{*/
 /*    font-family: 'vazirC';*/
 /*}*/
@@ -407,20 +407,20 @@
 }
 @media screen and (min-width: 385px) {
   .glass-div1 {
-    top: 200vh;
+    top: 180vh;
       width: 20%;
   height: 20%;
   }
     #demo{
-        font-size: 95%;
+        font-size:85%;
     }
     #mtn2{
-        font-size: 95%;
+        font-size:85%;
     }
     #mtn3{
-        font-size: 95%;
+        font-size:85%;
     }
-    .p_tank{
+    #p_tank{
         top: 230vh;
     }
 }
