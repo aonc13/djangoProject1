@@ -102,16 +102,15 @@
 
       /* Slideshow container */
       .slideshow-container {
-        max-width: 60%;
+        width: 70%;
         height:35vh;
         border:1px solid green;
         border-radius:25px;
-        position: initial;
-         /*top:170vh;*/
-          margin-top: 30vh;
-          margin-bottom: 5vh;
-        margin-right:auto;
-          margin-left: auto;
+        position: absolute;
+        top: 200vh;
+        margin: 7vh;
+        left: 0;
+        right: 0;
       }
 
       /* Caption text */
@@ -222,7 +221,7 @@
 
 .custom-box {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
      margin-right:.5vh;
           margin-left: .5vh;
     margin-bottom: 1vh;
@@ -267,7 +266,10 @@
 }
 
 .custom-box:hover .box-content {
-  opacity: 1;
+    opacity: 1;
+    font-size: 59%;
+    text-align: center;
+    margin: auto;
 }
 #d-itm-1{
     display: flex;
@@ -351,6 +353,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+    z-index: 2;
 }
 
 .roundcont1 {
@@ -405,12 +408,42 @@
 .glass-div1:hover .text-container1 {
   opacity: 1;
 }
-@media screen and (min-width: 385px) {
+
+
+
+
+
+
+.div-z{
+    position: relative;
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+    border: dotted 2px green;
+    top:220vh;
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 475px) {
   .glass-div1 {
     top: 180vh;
       width: 20%;
   height: 20%;
   }
+
+
+  .div-z{
+       top:118vh;
+      height: 50vh;
+    }
     #demo{
         font-size:85%;
     }
@@ -423,7 +456,22 @@
     #p_tank{
         top: 230vh;
     }
+
+    .slideshow-container{
+        width: 100%;
+        top: 130vh;
+        left: auto;
+        right: auto;
+        margin: 0;
+    }
+    .custom-box:hover .box-content{
+        font-size: 100%;
+        flex-wrap: nowrap;
+    }
 }
+
+
+
 
 
 
