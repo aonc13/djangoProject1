@@ -42,7 +42,8 @@
 .felex-one-in {
     margin: 3vh;
     height: 40vh;
-    border:2px solid green;
+    border:2px dotted green;
+    border-radius: 1vh;
     overflow: hidden;
 }
 
@@ -59,7 +60,8 @@
 
     margin: 3vh;
     height: 40vh;
-    border:2px solid green;
+    border:2px dotted green;
+    border-radius: 1vh;
     overflow: hidden;
 }
 
@@ -74,8 +76,9 @@
 
     margin: 3vh;
     height: 40vh;
-    border:2px solid green;
+    border:2px dotted green;
     overflow: hidden;
+    border-radius: 1vh;
 }
 
 #img {
@@ -142,7 +145,7 @@
         bottom:25vh;
         background-color: #bbb;
         border-radius: 50%;
-        display: inline-block;
+        display: none;
         transition: background-color 0.6s ease;
       }
 
@@ -342,7 +345,7 @@
 }
 .glass-div1 {
     position: relative;
-    top: 186vh;
+    top: 198vh;
     margin-bottom: 20vh;
   width: 40%;
   height: 40%;
@@ -421,6 +424,7 @@
     height: 100vh;
     border: dotted 2px green;
     top:114vh;
+    border-radius: 3vh;
 
 }
 
@@ -436,14 +440,14 @@
 
 @media screen and (min-width: 475px) {
   .glass-div1 {
-    top: 180vh;
+    top: 195vh;
       width: 20%;
   height: 20%;
   }
 
 
   .div-z{
-       top:118vh;
+       top:128vh;
       height: 50vh;
     }
     #demo{
@@ -456,7 +460,7 @@
         font-size:85%;
     }
     #p_tank{
-        top: 285vh;
+        top: 257vh;
     }
 
     #slideshow{
@@ -465,9 +469,9 @@
 
     .slideshow-container{
 
-        width: 100%;
+        width: 92%;
         top: 130vh;
-        left: auto;
+        left: 7vh;
         right: auto;
         margin: 0;
     }
