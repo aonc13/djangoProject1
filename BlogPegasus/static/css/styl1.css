@@ -116,10 +116,10 @@
       /* Caption text */
       .text {
         color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
+       color: #f2f2f2;
+          font-size: 120%;
         position: absolute;
-        bottom: 8px;
+        bottom: 14vh;
         width: 5vh;
         text-align: center;
       }
@@ -167,7 +167,7 @@
       }
       #slideshow{
         overflow:hidden;
-       /*bottom: 50vh;*/
+          display: none;      /*bottom: 50vh;*/
       }
   #demo{
     text-align: right;
@@ -342,7 +342,7 @@
 }
 .glass-div1 {
     position: relative;
-    top: 300vh;
+    top: 186vh;
     margin-bottom: 20vh;
   width: 40%;
   height: 40%;
@@ -420,7 +420,7 @@
     margin: auto;
     height: 100vh;
     border: dotted 2px green;
-    top:220vh;
+    top:114vh;
 
 }
 
@@ -428,7 +428,9 @@
 
 
 
-
+.sld-img{
+    display: none;
+}
 
 
 
@@ -454,10 +456,15 @@
         font-size:85%;
     }
     #p_tank{
-        top: 230vh;
+        top: 285vh;
+    }
+
+    #slideshow{
+        display: flex;
     }
 
     .slideshow-container{
+
         width: 100%;
         top: 130vh;
         left: auto;
@@ -467,6 +474,13 @@
     .custom-box:hover .box-content{
         font-size: 100%;
         flex-wrap: nowrap;
+    }
+    .text{
+        display: none;
+    }
+
+    .sld-img{
+        display: flex;
     }
 }
 
